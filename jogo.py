@@ -19,11 +19,24 @@ if (nível == 1):
     print(" Você tem 20 tentativas IXE É NOVATO CAGÃO")
     totalTentativas = 20
 elif (nível == 2):
-    print(" Você tem 10 tentativasOLHA JA TEM UM POUCO DE CORRAGEM ")
+    print(" Você tem 10 tentativas OLHA JA TEM UM POUCO DE CORRAGEM ")
     totalTentativas = 10
 elif (nível == 3):
     print("Você tem 5 tentativas Ó AI SIM VETERANO CORAJOSO ")
     totalTentativas = 5
 else:
     print("número invalido")
-    totalTentativas = 0
+
+for rodada in range (1, totalTentativas +1 ): 
+    print("Tentativa {} de {}". format(rodada, totalTentativas ))
+    chute_str = input("Digite um número entre 1 e 100: ")
+    chute =(chute_str)
+
+    if(chute < 1 or > 100):
+        print("número invalido")
+        continue 
+
+    acertou = chute ==numeroSecreto
+    maior = chute > numeroSecreto
+    menor = chute < numeroSecreto
+    

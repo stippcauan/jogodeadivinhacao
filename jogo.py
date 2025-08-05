@@ -9,20 +9,20 @@ numeroSecreto= random.randrange(0,100)
 totalTentativas = 0
 pontos = 100
 
-print("Qual o níveis de dificuldade?")
+print("Qual os níveis de dificuldade?")
 print("")
 print("(1)-Fácil (2)- Médio (3)- Difícil ")
 print("")
 nível = int(input("Escolha um nível"))
 print("")
 if (nível == 1):
-    print(" Você tem 20 tentativas IXE É NOVATO CAGÃO")
+    print(" Você tem 20 tentativas. IXE É NOVATO CAGÃO")
     totalTentativas = 20
 elif (nível == 2):
-    print(" Você tem 10 tentativas OLHA JA TEM UM POUCO DE CORRAGEM ")
+    print(" Você tem 10 tentativas. OLHA JA TEM UM POUCO DE CORRAGEM ")
     totalTentativas = 10
 elif (nível == 3):
-    print("Você tem 5 tentativas Ó AI SIM VETERANO CORAJOSO ")
+    print("Você tem 5 tentativas. Ó AI SIM VETERANO CORAJOSO ")
     totalTentativas = 5
 else:
     print("número invalido")
@@ -32,11 +32,11 @@ for rodada in range (1, totalTentativas +1 ):
     chute_str = input("Digite um número entre 1 e 100: ")
     chute =(chute_str)
 
-    if(chute < 1 or > 100):
-        print("número invalido")
+    if(chute < 1 or chute > 100):
+        print("Número invalido")
         continue 
 
-    acertou = chute ==numeroSecreto
+    acertou = chute == numeroSecreto
     maior = chute > numeroSecreto
     menor = chute < numeroSecreto
 
